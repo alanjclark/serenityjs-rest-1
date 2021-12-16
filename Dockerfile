@@ -9,3 +9,5 @@ RUN npm install
 CMD [ "npm", "test"]
 
 #RUN yarn report
+
+EXPOSE 8080
