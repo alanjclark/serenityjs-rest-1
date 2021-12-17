@@ -23,9 +23,8 @@ jobs:
       - run:
           name: Start webserver
           command: |
-            ./apache-tomcat-9.0.37/bin/startup.sh start
             cp webapp.war ./apache-tomcat-9.0.37/webapps
-            sleep 600
+            ./apache-tomcat-9.0.37/bin/startup.sh start
           background: true
 
       - run:
