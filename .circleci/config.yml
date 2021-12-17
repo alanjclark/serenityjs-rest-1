@@ -21,10 +21,12 @@ jobs:
       #     background: true
 
       - run:
+          name: Copy app to webserver
+          command: cp webapp.war ./apache-tomcat-9.0.37/webapps
+
+      - run:
           name: Start webserver
-          command: |
-            cp webapp.war ./apache-tomcat-9.0.37/webapps
-            ./apache-tomcat-9.0.37/bin/startup.sh start
+          command: ./apache-tomcat-9.0.37/bin/startup.sh
           background: true
 
       - run:
