@@ -26,7 +26,7 @@ jobs:
 
       - run:
           name: Start webserver
-          command: ./apache-tomcat-9.0.37/bin/catalina.sh start
+          command: ./apache-tomcat-9.0.37/bin/catalina.sh run
           background: true
 
       - run:
